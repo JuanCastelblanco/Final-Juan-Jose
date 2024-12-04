@@ -19,4 +19,5 @@ export async function registrarEnfermedad(datosEnfermedad) {
     }
     let respuestaInicial = await fetch(URL, peticion)
     let respuestaFinal = await respuestaInicial.json()
+    return respuestaFinal;
 }

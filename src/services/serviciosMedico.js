@@ -20,4 +20,5 @@ export async function registrarMedico(datosMedico) {
     }
     let respuestaInicial = await fetch(URL, peticion)
     let respuestaFinal = await respuestaInicial.json()
+    return respuestaFinal;
 }

@@ -19,4 +19,5 @@ export async function registrarSignoVital(datosSignoVital) {
     }
     let respuestaInicial = await fetch(URL, peticion)
     let respuestaFinal = await respuestaInicial.json()
+    return respuestaFinal;
 }
